@@ -15,14 +15,7 @@ const Card = ({ anime }) => {
 
     const addCard = () => {
 
-        addNotification({
-            title: 'Product Add in Cart',
-            message: `Product ${anime.title} added to Cart`,
-            duration: 5000,
-            icon: anime.image,
-            native: false,
-        }
-        )
+       
         addItem(anime);
         setIsAdded(true);
          // Reset after 2 seconds

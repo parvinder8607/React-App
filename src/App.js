@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import logo from './logo.svg';
 import './App.css';
@@ -11,33 +11,21 @@ import Cart from "./Page/Cart";
 import AddProduct from "./Page/AddProduct";
 import OrderStatus from "./Page/OrderStatus";
 
-
-
-const router = new createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: (
-                <CartProvider>
-                <SearchProvider>
-                <Layout />
-                </SearchProvider>
-                </CartProvider>),
-      children: [
-        { index: true, element: <Home /> },
-        { path: "/detail", element: <Detail />},
-        { path: "/cart", element: <Cart />},
-        { path: "/addProduct",element: <AddProduct />},
-        { path: "/order-status/:id", element: <OrderStatus />}
-      
-      ]
-    },
-  
-  ]
-)
-
-
 export default function App() {
-  return <RouterProvider router={router} />;
-  
-};
+  return (
+    <CartProvider>
+      <SearchProvider>
+        <Router>
+          <Layout />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/detail" element={<Detail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/addProduct" element={<AddProduct />} />
+            <Route path="/order-status/:id" element={<OrderStatus />} />
+          </Routes>
+        </Router>
+      </SearchProvider>
+    </CartProvider>
+  );
+}
