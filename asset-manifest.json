@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/React-App/static/css/main.dd391dbf.css",
-    "main.js": "/React-App/static/js/main.947eaa0a.js",
+    "main.js": "/React-App/static/js/main.3e6d9dd2.js",
     "static/js/453.0297a6b4.chunk.js": "/React-App/static/js/453.0297a6b4.chunk.js",
     "static/media/delivery-truck-svgrepo-com.svg": "/React-App/static/media/delivery-truck-svgrepo-com.74018a30a65c98ff2ae576d2e2c2538e.svg",
     "static/media/logo.svg": "/React-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/React-App/index.html",
     "main.dd391dbf.css.map": "/React-App/static/css/main.dd391dbf.css.map",
-    "main.947eaa0a.js.map": "/React-App/static/js/main.947eaa0a.js.map",
+    "main.3e6d9dd2.js.map": "/React-App/static/js/main.3e6d9dd2.js.map",
     "453.0297a6b4.chunk.js.map": "/React-App/static/js/453.0297a6b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd391dbf.css",
-    "static/js/main.947eaa0a.js"
+    "static/js/main.3e6d9dd2.js"
   ]
 }
