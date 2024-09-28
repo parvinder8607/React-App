@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../Context/CartContext";
 import styles from './Card.module.css';
-import addNotification,  { Notifications} from "react-push-notification";
+
 
 const Card = ({ anime }) => {
     const navigator = useNavigate();
