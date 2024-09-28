@@ -1,0 +1,84 @@
+.orderStatusContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.orderStatusTitle {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.progressBarContainer {
+    position: relative;
+    margin-bottom: 40px;
+    height: 8px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 100%;
+}
+
+.truckContainer {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    transition: left 1.4s ease-in-out;
+}
+
+.truck {
+    width: 40px;
+    height: 40px;
+}
+
+.statusSteps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.step.active {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .statusSteps {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 10px;
+    }
+}
+
+.orderDetails {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.orderDetails h3 {
+    margin-top: 0;
+}
+
+.orderDetails p {
+    margin: 10px 0;
+}   
